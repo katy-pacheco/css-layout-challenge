@@ -1,0 +1,69 @@
+.categoryItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.categoryItem:hover {
+    background-color: #F3F4F6;
+    transform: translateX(4px);
+}
+
+.iconContainer {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details {
+    flex: 1;
+    min-width: 0;
+}
+
+.nameRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 47px;
+    margin-bottom: 4px;
+}
+
+.name {
+    font-size: 10px;
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 21px;
+    border-radius: 4px;
+    font-size: 8px;
+    color: var(--color-text-primary);
+    background-color: var(--background-color);
+}
+
+
+.filesCount {
+    font-size: 8px;
+    color: var(--color-text-secondary);
+}
+
+.separator {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #E0E7F1;
+}
