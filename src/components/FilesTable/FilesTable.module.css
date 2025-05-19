@@ -1,0 +1,12 @@
+table {
+    border: none;
+    border-style: none;
+    border-collapse: separate;
+    border-spacing: 0 16px;
+}
+
+.row {
+    width: 528px;
+    height: 42px;
+    background-color: var(--background-color);
+}
