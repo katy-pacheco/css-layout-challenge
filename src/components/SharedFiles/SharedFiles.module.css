@@ -1,0 +1,86 @@
+.container {
+    padding: 24px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+
+
+.filesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13px;
+    max-width: 528px;
+    margin: 0 auto;
+    border-radius: 12px;
+    height: auto;
+}
+
+.fileCard {
+    height: auto;
+    width: 100%;
+    background: var(--background-color);
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+}
+
+.fileIcon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.fileInfo {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.fileInfo h3 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-text-primary);
+}
+
+.fileInfo p {
+    margin: 4px 0 0;
+    font-size: 8px;
+    color: var(--color-text-secondary);
+}
+
+.sharedCircles {
+    display: flex;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    margin-left: -6px;
+}
+
+.circle:first-child {
+    margin-left: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
