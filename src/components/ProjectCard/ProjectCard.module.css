@@ -1,0 +1,78 @@
+.projectCard {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+
+}
+
+.container {
+    position: relative;
+    width: 159px;
+    height: 133px;
+    border-radius: 12px;
+    background-color: var(--background-color);
+    box-shadow: 0px 4px 16px 0px #3A3A3A12;
+}
+
+.headerIcons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 20px 12px 0;
+}
+
+.projectIcon {
+    align-self: flex-start;
+}
+
+.moreIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 16px;
+    /* ajusta según tamaño del ícono */
+    height: 16px;
+    cursor: pointer;
+}
+
+
+.iconWrapper {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+
+.baseIcon {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlayIcon {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 14px;
+}
+
+.title {
+    color: var(--color-text-primary);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.created {
+    color: var(--color-text-secondary);
+    font-size: 8px;
+}
