@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 194px;
+    height: 202px;
+    top: 546px;
+    left: 808px;
+    border-radius: 18px;
+    background-color: var(--background-color);
+}
+
+.gradient {
+    width: 119px;
+    height: 73px;
+    left: 845px;
+    top: 563px;
+    margin-top: 17px;
+    margin-bottom: 23px;
+    background: linear-gradient(270.15deg, #689FF8 0.15%, #FF6860 54.7%, #FF9F00 99.9%);
+    border-radius: 11px;
+
+}
+
+.title {
+    font-size: 12px;
+    color: var(--color-text-primary);
+}
+
+.subtitle {
+    font-size: 8px;
+    color: var(--color-text-secondary);
+}
+
+.upgradeButton {
+    width: 116px;
+    height: 30px;
+    top: 702px;
+    left: 847px;
+    border: none;
+    border-radius: 7px;
+    font-size: 10px;
+    padding: 10px 4px;
+    cursor: pointer;
+    color: var(--background-color);
+    background-color: var(--complementary-color);
+}
+
+.upgradeButton:hover {
+    color: var(--background-color);
+    background-color: #ff9d00c4;
+}
