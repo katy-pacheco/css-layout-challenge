@@ -1,12 +1,99 @@
-table {
+.tableContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.table {
+    width: 100%;
     border: none;
-    border-style: none;
     border-collapse: separate;
-    border-spacing: 0 16px;
+    border-spacing: 0 8px;
+}
+
+.headerRow {
+    height: 40px;
+}
+
+.headerCell {
+    padding: 0 16px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-text-secondary);
+}
+
+.actionHeader {
+    width: 48px;
 }
 
 .row {
-    width: 528px;
-    height: 42px;
     background-color: var(--background-color);
+    transition: background-color 0.2s ease;
+}
+
+.row td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.row td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.row:hover {
+    background-color: var(--hover-background);
+}
+
+.nameCell {
+    padding: 12px 16px;
+    color: var(--color-text-primary);
+}
+
+.nameContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.fileName {
+    font-size: 12px;
+}
+
+.membersCell,
+.dateCell {
+    padding: 12px 16px;
+    color: var(--color-text-secondary);
+    font-size: 12px;
+}
+
+.actionsCell {
+    width: 48px;
+    padding-right: 16px;
+    text-align: right;
+}
+
+.actionButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    opacity: 0.6;
+}
+
+.actionButton:hover {
+    opacity: 1;
 }
