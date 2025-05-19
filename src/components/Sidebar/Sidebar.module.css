@@ -1,0 +1,165 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-text-primary);
+    height: 100vh;
+    width: 172px;
+    gap: 38px;
+}
+
+.sidebarContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.gradient {
+    width: 74px;
+    height: 21px;
+    margin-top: 36px;
+    margin-bottom: 66px;
+    margin-left: 32px;
+    border-radius: 5px;
+
+    background: linear-gradient(270deg, #689EF8 0%, #FF6860 56.25%, #FF9F00 100%);
+    border-radius: 5px;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 32px;
+    gap: 19px;
+    color: var(--color-text-secondary);
+    font-size: 10px;
+    transition: color 0.2s;
+}
+
+.menuItem:hover,
+.menuItem.active {
+    color: var(--background-color);
+}
+
+.leftIndicator {
+    position: absolute;
+    width: 7px;
+    height: 44px;
+    left: 0;
+    background: var(--background-color);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.iconContainer {
+    position: relative;
+}
+
+.rectangleIcon {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.rectangleIconHover {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.menuItem:hover .rectangleIcon,
+.menuItem.active .rectangleIcon {
+    opacity: 0;
+}
+
+.menuItem:hover .rectangleIconHover,
+.menuItem.active .rectangleIconHover {
+    opacity: 1;
+}
+
+
+.createSection {
+    position: relative;
+    margin-top: auto;
+}
+
+.options {
+    position: absolute;
+    bottom: 100%;
+    left: 28px;
+    right: 28px;
+    background-color: #464C61;
+    border-radius: 9px;
+    padding: 10px;
+    margin-bottom: 13px;
+    z-index: 10;
+}
+
+.options::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 15px;
+    width: 12px;
+    height: 12px;
+    background: #464C61;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+
+.createOption {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--color-text-muted);
+    font-size: 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.createOption:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--background-color);
+}
+
+.createOption:hover .rectangleIcon {
+    opacity: 1;
+}
+
+
+.createOptionLabel {
+    margin-left: 10px;
+}
+
+
+.createButton {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 116px;
+    height: 30px;
+    margin-left: 27px;
+    color: var(--background-color);
+    background-color: var(--complementary-color);
+    border: none;
+    border-radius: 7px;
+    font-size: 10px;
+    padding: 10px 4px;
+    cursor: pointer;
+}
+
+.iconWrapper {
+    width: 21px;
+    height: 21px;
+    border-radius: 4px;
+    background-color: #FFB233;
+    margin-left: 20px;
+}
+
+.unionIcon {
+    width: 7px;
+    height: 7px;
+    margin-top: 7px;
+}
