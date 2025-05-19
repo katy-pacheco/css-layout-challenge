@@ -27,11 +27,11 @@ export default function Layout({ children }: LayoutProps) {
                         </div>
                     </div>
                     <ProjectCard />
-                    <div>
+                    <div className={styles.filesProject}>
                         <h2>Recent Files</h2>
                         <p>View All</p>
-                        <FilesTable />
                     </div>
+                    <FilesTable />
 
                 </main>
             </div>

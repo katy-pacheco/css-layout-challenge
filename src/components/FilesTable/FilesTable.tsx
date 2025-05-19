@@ -1,4 +1,5 @@
-import styles from '../FilesTable/FilesTable.module.css';
+import React, { useState } from 'react';
+import styles from './FilesTable.module.css';
 import ellipsis from '../../assets/icons/ellipsisHorizontal.svg';
 
 export default function FilesTable() {
@@ -7,33 +8,44 @@ export default function FilesTable() {
         { name: 'True Photos', members: '12 members', lastModified: 'Mar 8, 2020', color: '#4AC29D' },
         { name: 'Dashboard Structure', members: '10 members', lastModified: 'Mar 9, 2020', color: '#FF6860' },
         { name: 'Character Illustration', members: '3 members', lastModified: 'Mar 10, 2020', color: '#FF9F00' },
-    ]
+    ];
+
     return (
-        <>
-            <table>
+        <div className={styles.tableContainer}>
+            <table className={styles.table}>
                 <thead>
-                    <tr>
-                        <td>Name</td>
-                        <td>Members</td>
-                        <td>Last Modified</td>
+                    <tr className={styles.headerRow}>
+                        <th className={styles.headerCell}>Name</th>
+                        <th className={styles.headerCell}>Members</th>
+                        <th className={styles.headerCell}>Last Modified</th>
+                        <th className={styles.actionHeader}></th>
                     </tr>
                 </thead>
                 <tbody>
                     {files.map((file) => (
                         <tr key={file.name} className={styles.row}>
-                            <td>
-                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="21" height="21" rx="5" fill={file.color} />
-                                </svg>
-                                {file.name}
+                            <td className={styles.nameCell}>
+                                <div className={styles.nameContainer}>
+                                    <div className={styles.iconContainer}>
+                                        <div
+                                            className={styles.icon}
+                                            style={{ backgroundColor: file.color }}
+                                        />
+                                    </div>
+                                    <span className={styles.fileName}>{file.name}</span>
+                                </div>
                             </td>
-                            <td>{file.members}</td>
-                            <td>{file.lastModified}</td>
-                            <td><img src={ellipsis} alt="more files" /></td>
+                            <td className={styles.membersCell}>{file.members}</td>
+                            <td className={styles.dateCell}>{file.lastModified}</td>
+                            <td className={styles.actionsCell}>
+                                <button className={styles.actionButton}>
+                                    <img src={ellipsis} alt="More options" />
+                                </button>
+                            </td>
                         </tr>
                     ))}
                 </tbody>
             </table>
-        </>
-    )
+        </div>
+    );
 }
