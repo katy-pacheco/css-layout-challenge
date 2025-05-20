@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import styles from './FilesTable.module.css';
 import ellipsis from '../../assets/icons/ellipsisHorizontal.svg';
 
