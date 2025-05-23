@@ -7,6 +7,7 @@ import rectangleGray from '../../assets/icons/rectangleGray.svg';
 import type { ReactNode } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import FilesTable from "../FilesTable/FilesTable";
+import SharedFiles from "../SharedFiles/SharedFiles";
 
 type LayoutProps = {
     children?: ReactNode;
@@ -33,6 +34,13 @@ export default function Layout({ children }: LayoutProps) {
                             <p>View All</p>
                         </div>
                         <FilesTable />
+                    </div>
+                    <div>
+                        <div className={styles.filesProject}>
+                            <h2>Share with me</h2>
+                            <p>View All</p>
+                        </div>
+                        <SharedFiles />
                     </div>
 
                 </main>
